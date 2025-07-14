@@ -18,27 +18,114 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-svg {
-  width: 45px;
-  height: 45px;
+button {
+  border: none;
+  outline: none;
 }
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Styling the Header */
 
 header {
-  background-color: rgb(252, 246, 246);
+  background-color: #FFFFFF;
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
+.search-container {
+  align-items: center;
+  gap: 20px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.search-bar {
+  width: 800px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #E2E8F0;
+}
+
+.search-svg {
+  margin-left: 30px;
+}
+
+.notifications-container {
+  grid-column: 2 / 4;
+  gap: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 175px;
+}
+
+.admin-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.greeting-container {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.admin-greet {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-left: 15px;
+}
+
+.admin-name-greet {
+  font-size: 1.5rem;
+}
+
+.buttons-container {
+  margin-left: 115px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons-container button {
+  background-color: #1992D3;
+  color: white;
+  width: 130px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+/* Styling the Sidebar */
+
 aside {
-  background-color: rgb(0, 153, 255);
+  background-color: #1992D3;
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
-  grid-template-rows: 1fr 6fr 3fr;
+  grid-template-rows: repeat(12, 1fr);
   gap: 50px;
+}
+
+.dashboard {
+  padding-top: 16px;
+}
+
+.dashboard-svg {
+  width: 50px;
+  height: 50px;
 }
 
 .side-first-section,
 .side-second-section {
   display: grid;
+  gap: 10px;
 }
 
 aside p {
@@ -50,18 +137,16 @@ aside * {
   fill: white;
 }
 
-.side-second-section {
-  margin-bottom: 300px;
-}
-
 aside .side-content {
   padding-left: 24px;
   font-size: 1.1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
 }
+
+/* Styling the Main section */
 
 main {
   background-color: rgb(197, 202, 197);
